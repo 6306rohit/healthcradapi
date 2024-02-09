@@ -1,0 +1,315 @@
+{
+	"info": {
+		"_postman_id": "7264560b-91de-4664-bf9d-dc77a1c73297",
+		"name": "healthcradApi",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/doctor_getshift",
+			"id": "d0391c53-1f01-4d42-9b08-a0a2a64971fa",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"doctor_id\":\"78\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/doctor_getshift"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/orders_medic",
+			"id": "2277ed7f-bcb5-409d-b571-95a665bee457",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"groupid\":\"16984806701151\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/orders_medic"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/medicebyall",
+			"id": "fae81fbe-69fc-4bad-833d-a959c6736c75",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"name\":\"paracetamol\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/medicebyall"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/book_appointment",
+			"id": "1fb1d0d0-52b9-4c99-bf8c-ecb32db823ae",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"slot_id\":\"1\",\r\n    \"doctor_id\":\"1\",\r\n    \"amount\":\"10\",\r\n    \"user_id\":\"1069\",\r\n    \"paymode\":\"cod\",\r\n    \"name\":\"rohit\",\r\n    \"address\":\"lucknow\",\r\n    \"age\":\"10\",\r\n    \"phone\":\"6306206322\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/book_appointment"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/past_appointments?userid=1069",
+			"id": "3890449f-2a77-428d-ab4a-9cc0df07b5e6",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.healthcrad.com/api/index.php/api/Mobile_app/past_appointments?userid=1069",
+					"protocol": "https",
+					"host": [
+						"app",
+						"healthcrad",
+						"com"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"api",
+						"Mobile_app",
+						"past_appointments"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "1069"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/feedback",
+			"id": "ba7dd7ed-e684-4d16-87eb-55086aec8879",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":\"1069\",\r\n    \"problem\":\"not \",\r\n    \"name\":\"test\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/feedback"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/upcoming_appointments?userid=1069",
+			"id": "f2c13167-0d48-4076-b2ab-e047fd643777",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":\"1069\"\r\n}"
+				},
+				"url": {
+					"raw": "https://app.healthcrad.com/api/index.php/api/Mobile_app/upcoming_appointments?userid=1069",
+					"protocol": "https",
+					"host": [
+						"app",
+						"healthcrad",
+						"com"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"api",
+						"Mobile_app",
+						"upcoming_appointments"
+					],
+					"query": [
+						{
+							"key": "userid",
+							"value": "1069"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/upcoming_appointments",
+			"id": "bbeb0cc5-daa1-42cb-a035-9818610c71c5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"userid\":\"1069\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/upcoming_appointments"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/delete_appointment",
+			"id": "6a5dc471-198b-4a9f-917f-92b6a49e5bc8",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\":\"5\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/delete_appointment"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/help",
+			"id": "20a02304-2541-46a9-a191-d06a4023926b",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"2\",\r\n    \"name\":\"rohit\",\r\n    \"message\":\"6306206322\",\r\n    \"phone\":\"lucknow\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/help"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/book_ambulance",
+			"id": "903bb356-4fe9-4190-aefe-9150b84f75b4",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"2\",\r\n    \"username\":\"rohit\",\r\n    \"phone\":\"6306206322\",\r\n    \"address\":\"lucknow\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/book_ambulance"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/show_report?user_id=1069",
+			"id": "5c12340a-0188-4ff3-bd46-5ae38f0eaa5d",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://app.healthcrad.com/api/index.php/api/Mobile_app/show_report?user_id=1069",
+					"protocol": "https",
+					"host": [
+						"app",
+						"healthcrad",
+						"com"
+					],
+					"path": [
+						"api",
+						"index.php",
+						"api",
+						"Mobile_app",
+						"show_report"
+					],
+					"query": [
+						{
+							"key": "user_id",
+							"value": "1069"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/address",
+			"id": "f6c2ede5-29e7-4a7c-b4e4-f9c18f3781a1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user_id\":\"2\",\r\n    \"pincode\":\"226021\",\r\n    \"city\":\"lucknow\",\r\n    \"name\":\"rohit\",\r\n    \"address\":\"lucknow\",\r\n    \"landmark\":\"lucknow\",\r\n    \"phone\":\"6306206322\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/address"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/getbanner",
+			"id": "5908af47-3f28-488d-ae9e-43d6ab3740b5",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/getbanner"
+			},
+			"response": []
+		},
+		{
+			"name": "https://app.healthcrad.com/api/index.php/api/Mobile_app/slotget",
+			"id": "68dc61cd-3d45-49ed-b5a5-69396c75976f",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"docid\":\"1\"\r\n}"
+				},
+				"url": "https://app.healthcrad.com/api/index.php/api/Mobile_app/slotget"
+			},
+			"response": []
+		}
+	]
+}
